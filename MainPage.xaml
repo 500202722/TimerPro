@@ -8,10 +8,10 @@
             Spacing="25"
             Padding="30,0">
             
-            <Label Text="00:00:00" FontSize="Title" Padding="0,75"/>
-            <Button Text="Start"/>
-            <Button Text="Stop"/>
-            <Button Text="Reset"/>
+            <Label x:Name="lblDisplay" Text="00:00:00" FontSize="Title" Padding="0,75" HorizontalOptions="Center"/>
+            <Button Text="Start" x:Name="btnStart" Clicked="BtnStart_OnClicked"/>
+            <Button Text="Stop" x:Name="btnStop" Clicked="BtnStop_OnClicked"/>
+            <Button Text="Reset" Clicked="BtnReset_OnClicked"/>
 
         </VerticalStackLayout>
     </ScrollView>
